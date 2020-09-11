@@ -89,5 +89,5 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`https://alternoss.herokuapp.com`);
+  http.get(`https://alternos.github.io`);
 }, 150000);
