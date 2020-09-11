@@ -3,7 +3,7 @@ var mineflayer = require("mineflayer");
 var db = require("quick.db");
 
 var ayar = {
-  host: "Reyizzzler.aternos.me", //Sunucu IPnizi "" arasına giriniz.
+  host: "Reyizzzzler.aternos.me", //Sunucu IPnizi "" arasına giriniz.
   port: 25565, //Sunucu portunuzu giriniz. Genellikle 25565 olarak ayarlıdır.
   username: "Lynch", //Sunucuya giriş yapacak bot isminizi "" arasına girin.
   version: false //Burası böyle kalsın değiştirmeyin.
@@ -89,5 +89,5 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`https://alternos.github.io`);
+  http.get(`https://alternoss.herokuapp.com`);
 }, 150000);
