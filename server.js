@@ -77,17 +77,6 @@ function bindEvents(bot) {
     bindEvents(bot);
   }
 }
-
-
-//Yeni Kod:
-const http = require('http');
-const express = require('express');
-const app = express();
-app.get("/", (request, response) => {
-  response.sendStatus(200);
-  
-});
-app.listen(process.env.PORT);
-setInterval(() => {
-  http.get(`https://alternoss.herokuapp.com`);
-}, 150000);
+const app = express()
+app.get('/', (req, res) => res.send(${ayar.host})) 
+app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env.PORT))
