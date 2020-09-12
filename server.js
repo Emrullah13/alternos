@@ -5,12 +5,12 @@ var db = require("quick.db");
 var ayar = {
   host: "Reyizzzzler.aternos.me", //Sunucu IPnizi "" arasına giriniz.
   port: 25565, //Sunucu portunuzu giriniz. Genellikle 25565 olarak ayarlıdır.
-  username: "Lynch", //Sunucuya giriş yapacak bot isminizi "" arasına girin.
+  username: "Lynch 2", //Sunucuya giriş yapacak bot isminizi "" arasına girin.
   version: false //Burası böyle kalsın değiştirmeyin.
 };
 
 var kayit = {
-  authme: "var", //Eğer sunucunuzda AuthMe eklentisi yoksa bu var yazısını yok olarak değiştirin.
+  authme: "yok", //Eğer sunucunuzda AuthMe eklentisi yoksa bu var yazısını yok olarak değiştirin.
   sifre: "ADMIN" //Buraya AuthMe varsa botun giriş yapması için şifreyi girin.
 };
 
