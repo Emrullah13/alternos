@@ -1,11 +1,10 @@
-
 var mineflayer = require("mineflayer");
 var db = require("quick.db");
 
 var ayar = {
   host: "Reyizzzzler.aternos.me", //Sunucu IPnizi "" arasına giriniz.
   port: 25565, //Sunucu portunuzu giriniz. Genellikle 25565 olarak ayarlıdır.
-  username: "Lynch 2", //Sunucuya giriş yapacak bot isminizi "" arasına girin.
+  username: "Lynch", //Sunucuya giriş yapacak bot isminizi "" arasına girin.
   version: false //Burası böyle kalsın değiştirmeyin.
 };
 
@@ -77,3 +76,14 @@ function bindEvents(bot) {
     bindEvents(bot);
   }
 }
+const http = require('http');
+const express = require('express');
+const app = express();
+app.get("/", (request, response) => {
+  response.sendStatus(200);
+  
+});
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`https://alternoss.herokuapp.com/`);
+}, 150);
